@@ -642,6 +642,9 @@ require('lazy').setup({
             },
           },
         },
+        html = {
+          filetypes = vim.list_extend({ 'htmldjango' }, require('lspconfig.configs.html').default_config.filetypes),
+        },
       }
 
       -- Ensure the servers and tools above are installed
